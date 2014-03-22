@@ -1,0 +1,12 @@
+extends ../shared/template
+
+block content
+  h1= title
+
+  .row
+    .small-12.columns
+      p Login or Register with:
+      a(href='/login')
+        button.tiny.radius Local Login
+      a(href='/signup')
+        button.tiny.radius Local Signup

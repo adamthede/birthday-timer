@@ -1,0 +1,22 @@
+extends ../shared/template
+
+block content
+  h1= title
+
+  .row
+    .small-12.columns
+      form(action='/login', method='POST')
+        fieldset
+          legend Login
+          label Email
+          input(type='email', name='email', placeholder='you@you.com', autofocus='true')
+          label Password
+          input(type='password', name='password', placeholder='something secretive')
+          button.tiny.radius LOGIN
+  .row
+    .small-12.columns
+      p Need an account? 
+        a(href='/signup') Signup
+      p Or go 
+        a(href='/') home
+
